@@ -1,0 +1,166 @@
+/*BASE STYLES*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #333;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+	font-size: 1.1em;
+}
+
+main {
+	background-color: #333;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+/*HEADER STYLES*/
+
+header {
+	background-color: #eaeaea;
+	color: #333;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.gradient-text {
+	background-color: #fff;
+	background: linear-gradient(#ffc500, #c21500);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#image {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#img-caption {
+	font-style: italic;
+}
+
+/*TRIBUTE INFO STYLES */
+
+section#tribute-info {
+	margin: 3em 0;
+}
+
+#tribute-info article {
+	background-color: #eaeaea;
+	color: #333;
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 10px
+}
+
+#tribute-info article h2 {
+	padding-bottom: 0.3em;
+}
+
+
+/*AUDIO STYLES*/
+
+#audio {
+	color: #333;
+	background-color: #eaeaea;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+#audio h2 {
+	padding-bottom: 0.3em;
+}
+
+.audio-box {
+	margin: 1em 0;
+	background-color: #aaa;
+	color: #333;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+iframe {
+	margin-top: 0.5em;
+	border-radius: 10px;
+}
+
+
+
+/*READ MORE STYLES*/
+
+#read-more {
+	background-color: #eaeaea;
+	color: #333;
+	padding: 1em;
+	margin: 3em 0;
+	border-radius: 10px
+}
+
+#read-more a {
+	text-decoration: none;
+	color: #080994;
+}
+
+#read-more a:hover {
+	font-weight: 700;
+}
+
+
+/*FOOTER STYLE*/
+footer {
+	text-align: center;
+	color: #eaeaea;
+	margin-bottom: 1em;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px) {
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1.4em;
+	}
+
+	h1 {
+		font-size: 3em;
+		margin: 0;
+	}
+
+	.soundcloud-demos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 0;
+	}
+
+	.audio-box {
+		margin: 2em;
+		background: #333;
+		border-radius: 10px;
+		padding: 1em;
+	}
+
+	.audio-box h3 {
+		font-size: 0.8em;
+	}
+
+	iframe {
+		border-radius: 10px;
+	}
+
+}
